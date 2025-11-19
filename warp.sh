@@ -41,7 +41,7 @@ refresh_token=
 show_regonly=0
 teams_ephemeral_token=
 token=
-model_name="rany2/warp.sh"
+model_name="HappyLeslieAlexnader/warp.sh"
 device_name=
 
 # Helper function to send traffic to Cloudflare API without
@@ -53,7 +53,7 @@ cfcurl() {
 		--header 'User-Agent: 1.1.1.1/6.81' \
 		--header 'CF-Client-Version: a-6.81-2410012252.0' \
 		--header 'Accept: application/json; charset=UTF-8' \
-		--tls-max 1.2 \
+		--tls-max 1.3 \
 		--ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-CCM:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-CCM:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:AES256-GCM-SHA384:AES256-CCM:AES128-GCM-SHA256:AES128-CCM:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES256-CCM:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-CCM:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA' \
 		--disable \
 		--silent \
@@ -82,7 +82,7 @@ help_page() { cat >&2 <<-EOF
 	  -6  use ipv6 for curl
 	  -T  teams JWT token (default no JWT token is sent)
 	  -R  refresh token (format is token,device_id,wg_private_key; specify this to get a refreshed config)
-	  -m  model name (default is rany2/warp.sh)
+	  -m  model name (default is HappyLeslieAlexander/warp.sh)
 	  -d  device name (default is blank)
 	  -t  show cloudflare trace and exit only
 	  -h  show this help page and exit only
