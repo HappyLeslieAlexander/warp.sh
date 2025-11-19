@@ -8,7 +8,7 @@ Make sure to have `jq`, `curl`, and `wireguard-tools` (for `wg genkey` and `wg p
 before using this shell script.  
 
 ```shell
-git clone https://github.com/rany2/warp.sh.git
+git clone https://github.com/HappyLeslieAlexander/warp.sh.git
 cd warp.sh
 ./warp.sh
 ```
